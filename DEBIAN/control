@@ -1,0 +1,10 @@
+Package: zorn-walls
+Version: 1.0
+Architecture: all
+Maintainer: Aprende con Sthip <aprendeconsthip@gmail.com>
+Installed-Size: 1024
+Depends: 
+Section: graphics
+Priority: optional
+Description: Fondos de pantalla de Zorn-OS
+

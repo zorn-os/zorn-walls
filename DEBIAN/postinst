@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Configurar la carpeta zorn-walls como la principal para fondos de pantalla
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s "/usr/share/backgrounds/zorn-walls"
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/last-image -s "/usr/share/backgrounds/zorn-walls"
+
+# Aplicar un fondo de pantalla específico de la carpeta zorn-walls
+# Aquí seleccionamos el primer archivo PNG de la carpeta (ajusta el nombre del archivo si quieres otro fondo específico)
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-uri -s "file:///usr/share/backgrounds/zorn-walls/3.png"
+
+# Recargar la configuración de fondos de pantalla
+xfdesktop --reload
